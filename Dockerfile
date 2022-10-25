@@ -24,4 +24,3 @@ RUN npm run build
 FROM nginx AS runner
 
 COPY --from=builder /home/node/app/build /usr/share/nginx/html
-
